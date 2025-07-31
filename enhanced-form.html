@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Rapha’s HTML5 Demo Page</h1>
+    <p>This page shows lists, tables, media, and a clean HTML5 form with validation.</p>
+  </header>
+
+  <section>
+    <h2>Top 3 Web Dev Skills</h2>
+    <ul>
+      <li>Semantic HTML</li>
+      <li>CSS Flex/Grid</li>
+      <li>Accessible Forms</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skill Comparison Table</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+          <th>Learning Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>Advanced</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Intermediate</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Beginner</td>
+          <td>🔄</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Sample Media</h2>
+    <figure>
+      <img src="https://via.placeholder.com/300x150" alt="Sample Placeholder Image" />
+      <figcaption>Sample Image</figcaption>
+    </figure>
+
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <video width="320" height="240" controls>
+      <source src="sample-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form action="/submit" method="POST" autocomplete="on">
+
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g. Rapha Kamunu" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" minlength="10" maxlength="10" required /><br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required /><br /><br />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Choose...</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Info</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" minlength="5" required /><br /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required /><br /><br />
+
+        <label for="bio">Short Bio:</label><br />
+        <textarea id="bio" name="bio" placeholder="Tell us a bit about yourself..." rows="4" cols="50"></textarea><br /><br />
+
+        <label>
+          <input type="checkbox" name="terms" required />
+          I agree to the terms and conditions
+        </label><br /><br />
+
+        <input type="submit" value="Register" />
+        <input type="reset" value="Clear" />
+      </fieldset>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>Made by Rapha — 2025</p>
+  </footer>
+
+</body>
+  </html>
